@@ -1,0 +1,570 @@
+p {
+    margin: 7px 0;
+    line-height: 1.36em;
+    font-size: 14px;
+}
+a {
+    color: #3d89e0;
+    text-decoration: none;
+}
+a:hover {
+    color: #222;
+    background-color: transparent;
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: normal;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.2em;
+    margin: 16px 0;
+}
+h1 {font-size: 270%;}
+h2 {font-size: 100%;}
+h3 {font-size: 200%;}
+h4 {font-size: 170%;}
+h5 {font-size: 145%; font-weight: bold;}
+h6 {font-size: 125%; font-weight: bold;}
+ 
+input[type=text], textarea {
+    padding: 4px;
+    margin: 5px 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+ 
+/*-------------------------------------------------------------
+   LAYOUT 
+---------------------------------------------------------------*/
+html {
+    background: #acacac url(../../../../20241223102821im_/http:/themes.wdfiles.com/local--files/goodnight/goodnight-bg.png.html) repeat 0 0;
+}
+body {
+    color: #222;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.3em;
+}
+#container-wrap {
+    margin: 0 auto;
+    width: 960px; 
+ 
+}
+ 
+/*-------------------------------------------------------------
+   HEADER 
+---------------------------------------------------------------*/
+ 
+#header {
+    height: 154px;
+    position: relative;
+}
+#header h1 {
+    position: absolute;
+    top: 44px;
+}
+#header h1 a {
+    color: #2a2a2a;
+    font-size: 40px;
+    padding: 17px 0 0 10px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+#header h1 a:hover {color: #eee;}
+#header h2 {
+    font-size: 13px;
+    color: #666;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+ 
+/*----- LOGIN STATUS ------------------------------------------*/
+ 
+#login-status {
+    color: #666;
+    position: absolute;
+    top: 3px;
+}
+#login-status .printuser a {
+    display: none;
+}
+a#account-topbutton {
+    background: none;
+    border: none;
+}
+#login-status a {
+    padding: 0 3px;
+    color: #666;
+    text-decoration: none;
+}
+#login-status a:hover {color: #222;}
+#account-options {
+    width: 140px;
+    text-align: center;
+    border: none;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+ 
+/*----- SEARCH TOP BOX -----------------------------------------*/
+ 
+#search-top-box {
+    position: absolute;
+    right: 0px;
+    top: 104px;
+    height: 48px;
+    width: 240px;
+    text-align: right;
+}
+#search-top-box input.text {
+    width: 135px;
+    margin: 12px 30px 0 0;
+    padding-right: 25px;
+    background: #e2e2e2;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+#search-top-box input.text:focus {
+    background: #fff;
+    outline: none;
+}
+#search-top-box input.text.empty {
+    color: #666;
+    font-style: italic;
+}
+#search-top-box input.button {
+    position: absolute;
+    top: 9px;
+    right: 22px;
+    border: none;
+    display: block;
+    width: 36px;
+    height: 28px;
+    padding: 0;
+    background: transparent url(../../../../20241223102821im_/http:/themes.wdfiles.com/local--files/pink-flower/flower-searchButton.png) no-repeat left center;
+    color: transparent;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0.7;
+ 
+}
+#search-top-box input.button:hover {
+    opacity: 1;
+}
+ 
+/*----- TOPBAR NAVIGATION ------------------------------------*/
+ 
+#top-bar {
+    bottom: 0;
+    height: 48px;
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 958px;
+    z-index: 2;
+    background: #3b3b3b url(../../../../20241223102821im_/http:/themes.wdfiles.com/local--files/goodnight/goodnight-topbar-bg.png) repeat;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #333;
+}
+#top-bar ul {
+    float: left;
+    padding: 0;
+    height: 48px;
+    margin: 0;
+    border: none;
+    border-right: 1px solid #585858;
+}
+#top-bar ul li {
+    display: inline;
+    font-size: 14px;
+    padding: 0; 
+    height: 28px;
+    margin: 0;
+    position: relative;
+ 
+}
+#top-bar ul li:first-child a {
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    border-radius: 4px 0 0 0;
+}
+#top-bar ul li a {
+    display: block;
+    color: #eee;
+    padding: 15px 26px 5px;
+    height: 27px;
+    text-shadow: 0px 1px 2px #000;
+    border-top: 1px solid #585858;
+    border-right: 1px solid #2c2c2c;
+    border-left: 1px solid #585858;
+    -webkit-transition: background-color 220ms ease;
+    -moz-transition: background-color 220ms ease;
+}
+#top-bar ul li a.current-link {
+    color: #48a0ff;
+}
+#top-bar ul li a:hover,
+#top-bar ul li.sfhover a {
+    background-color: #4a4a4a;
+    background-color: rgba(255,254,255,0.1);
+    text-decoration: none;
+}
+#top-bar ul li ul {
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1em;
+    left: 0;
+    line-height: 1.8em;
+    padding: 4px 0;
+    position: absolute;
+    z-index: 100;
+    width: 160px;
+    height: auto;
+    border: none;
+    background: #3b3b3b url(../../../../20241223102821im_/http:/themes.wdfiles.com/local--files/goodnight/goodnight-topbar-bg.png) repeat;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.4) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.6);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.6);
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+}
+#top-bar ul li:hover ul {
+    display: inline-block;
+    opacity: 1;
+}
+#top-bar ul li ul li {
+    padding: 0 10px;
+    background: none;
+    border: none;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+#top-bar ul li ul li a {
+    background: none;
+    padding: 6px 0;
+    text-transform: none;
+    line-height: 1;
+    height: auto;
+}
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    background: none;
+}
+#top-bar ul li ul li a:hover {
+    color: #48a0ff;
+}
+#top-bar ul li ul li ul {
+    display: none !important;
+}
+ 
+/*-------------------------------------------------------------
+   MAIN CONTENT
+---------------------------------------------------------------*/
+ 
+#content-wrap {
+    position: relative;
+    padding: 0 15px;
+    clear: both;
+    overflow: hidden;
+    background: #f6f6f6;
+    -webkit-box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px; 
+}
+#page-title {
+    border: none;
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 10px;
+    color: #111;
+    letter-spacing: -1px;
+    padding: 10px 0;
+}
+#main-content {
+    float: left;
+    padding: 0;
+    width: 680px;
+    margin: 0;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+}
+#page-content {
+    width: 660px;
+    margin: 0 auto;
+}
+ 
+/*----- SIDEBAR -------------------------------------------*/
+ 
+#side-bar{
+    float: right;
+    padding: 10px;
+    width: 220px;
+    margin: 0;
+    overflow: hidden;
+}
+#side-bar a {color: #444;}
+#side-bar a:hover {color: #3d89e0;}
+#side-bar ul {
+    list-style-type: none;
+    padding: 0 5px 0;
+}
+ 
+/*----- SIDEBAR ON LEFT -----------------------------------*
+ 
+#page-title {margin-left: 10px;}
+#side-bar {float: left;}
+#main-content {
+    float: right;
+    border-right: none;
+    border-left: 1px solid #ccc;
+}
+ 
+/*----- NO SIDEBAR ---------------------------------------*
+ 
+#side-bar {display: none;}
+#main-content {
+    width: 100%;
+    border: none;
+}
+#page-content {width: 97%;}
+ 
+/*----- BREADCRUMBS -------------------------------------------*/
+ 
+#breadcrumbs {
+    color: #888;
+    padding: 0 10px;
+    margin-top: 5px;
+}
+#breadcrumbs a {color: #888;}
+#breadcrumbs a:hover {color: #3d89e0;}
+ 
+/*-------------------------------------------------------------
+   FOOTER
+---------------------------------------------------------------*/
+#page-options-container {padding-bottom: 5px;}
+#footer {
+    color: #ddd;
+    padding: 12px 10px 0;
+    font-size: 0.95em;
+    margin-top: 0;
+}
+#footer .options {font-size: 100%;}
+#footer a, #license-area a {
+    color: #ddd;
+    text-decoration: none;
+}
+#footer a:hover, #license-area a:hover {color: #333;}
+#license-area {
+    padding: 5px 10px 10px;
+    color: #ddd;
+    font-size: 0.95em;
+}
+ 
+/*-------------------------------------------------------------
+   WIKI ELEMENTS
+---------------------------------------------------------------*/
+#action-area {padding: 0 3px;}
+#action-area h1 {font-size: 200%;}
+.code {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+blockquote {
+    background: #FEFEFF;
+    border: none;
+    border-top: 2px solid #adadad;
+    color: #444;
+    font-family: Georgia, “Times New Roman”, Times, serif;
+    padding: 3px 10px;
+}
+ 
+/*----- INBUILT HOVERTIPS -------------------------------------*/
+.hovertip {
+    border: none !important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    max-width: 300px;
+    background: none;
+}
+.hovertip .content {
+    background-color: rgba(20,20,20,0.83617);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 4px 8px;    
+    color: #fff;
+}
+.hovertip .content .footnote .f-content {
+    margin: 2px;
+}
+.hovertip .content .footnote .f-heading, .hovertip .content .footnote .f-footer  {
+    display: none !important;
+}
+ 
+/*----- COMMENTS ----------------------------------------------*/
+ 
+.comments-box {
+    border-top: 2px solid #eee;
+    margin: 10px 0;
+}
+.comments-box h1 {
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+.post-container {
+    background: #fefefe;
+    padding: 0 10px;
+    position: relative;
+    margin: 15px 0;
+    border: 1px solid #bbb;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.post-container .post {
+    margin: 0;
+    padding: 5px 0 2px;
+}
+.post-container .post.folded .short {background: none;}
+.post-container .head .info, .post-container .head {
+    margin: 0;
+    background: none !important;
+    border: none;
+    text-transform: none;
+}
+.post-container .head .info .printuser a {
+    color: #3d89e0;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.post-container .head .info .printuser a:hover {
+    background: none;
+    color: #444;
+}
+.post-container .head .info .odate {
+    float: right;
+    color: #777;
+    font-size: 12px;
+}
+.post-container .head .options{display: none;}
+.post-container .options {
+    margin: 5px 0 0;
+    padding: 5px 0 0;
+}
+.post-container .post .options a {
+    color: #444;
+    padding: 4px 0 0;
+    text-decoration: none;
+    font-size: 12px;
+}
+.post-container .post .options a:hover {color: #3d89e0;}
+ 
+/*----- BUTTONS ----------------------------------------------*/
+ 
+div.buttons input, input.button, button, file, a.button, 
+.button-bar a, #new-post-button, .rate-points, .rateup a, 
+.ratedown a, .cancel a, .pager a, div.new-post a, .owindow .button-bar a {
+    height: auto;
+    padding: 4px 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #444;
+    border: none;
+    color: #fff;
+    font-size: 1.1em;
+    margin: 0 5px;
+}
+div.buttons input:hover, input.button:hover, button:hover, 
+file:hover, a.button:hover, .button-bar a:hover, #new-post-button:hover, 
+.rateup a:hover, .ratedown a:hover, .cancel a:hover, .pager a:hover, 
+div.new-post a:hover, .owindow .button-bar a:hover {
+    color: #000;
+    background-color: #3d89e0;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.page-rate-widget-box .rate-points, .pager .current {
+    padding: 4px 6px;
+    font-size: 1.1em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+}
+ 
+.pager a, .pager a:hover, .pager .current, .page-rate-widget-box a {
+    padding: 3px 8px;
+}
+/*----- OWINDOWS ----------------------------------------------*/
+.owindow {
+    border: none;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fafafa), to(#eef1f1));
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    border-top: 1px solid #fff;
+}
+.owindow .title {
+    background: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #fff;
+}
+.owindow .content {border-top: 1px solid #ddd;}
+.owindow.owait .content, .owindow.osuccess .content {border: none;}
+.owindow h1 {font-size: 1.6em;}
+.owindow .button-bar {padding-right: 0;}
+.owindow .button-bar a {outline: none;}
+
+/*
+     FILE ARCHIVED ON 10:28:21 Dec 23, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:12:38 Jan 13, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.749
+  exclusion.robots: 0.033
+  exclusion.robots.policy: 0.016
+  esindex: 0.023
+  cdx.remote: 5.192
+  LoadShardBlock: 271.097 (3)
+  PetaboxLoader3.datanode: 139.534 (4)
+  PetaboxLoader3.resolve: 168.406 (2)
+  load_resource: 122.082
+*/
